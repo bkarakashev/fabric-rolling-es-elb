@@ -20,14 +20,15 @@ Python Fabric was chosen because of ease and speed of development.
     fab es_rolling_restart:elb_name=<elb>,es_hostname=<es>,es_port=<9200>
 
 Where
+
 **elb_name**
-Name of the ELB in AWS.
+    Name of the ELB in AWS.
 
 **es_hostname**
-Hostname or Alias you use for connecting to Elasticsearch. Can definitely be your ELB's DNS Name.
+    Hostname or Alias you use for connecting to Elasticsearch. Can definitely be your ELB's DNS Name.
 
 **es_port**
-Elasticsearch port, usually 9200.
+    Elasticsearch port, usually 9200.
 
 ## Future work
 Although this is a working script, some more work is required to make it prettier.
