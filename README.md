@@ -1,5 +1,5 @@
 # fabric-rolling-es-elb
-A fabric script that performs a rolling restart of an Elasticsearch Cluster which is behind an Elastic Load Balancer
+A fabric script that performs a rolling restart of an Elasticsearch Cluster which is behind an Elastic Load Balancer.
 
 ## Motivation
 Sometimes Elasticsearch needs a restart, because of several reasons including bugs.
@@ -20,13 +20,13 @@ Python Fabric was chosen because of ease and speed of development.
     fab es_rolling_restart:elb_name=<elb>,es_hostname=<es>,es_port=<9200>
 
 Where
-#### elb_name
+**elb_name**
 Name of the ELB in AWS.
 
-#### es_hostname
+**es_hostname**
 Hostname or Alias you use for connecting to Elasticsearch. Can definitely be your ELB's DNS Name.
 
-#### es_port
+**es_port**
 Elasticsearch port, usually 9200.
 
 ## Future work
